@@ -1,4 +1,4 @@
-# ThermoFuck
+# Thermo
 
 A new BrainFuck compiler designed by me to have only 4 bit numbers.
 
