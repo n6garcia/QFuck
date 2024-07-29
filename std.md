@@ -1,10 +1,12 @@
-# setup memory counter/downcounter/upbit/downbit/unbit
-{stpbits}.>>+>->>. 
-# increment unbit ("pc counter") call twice to qbit then unbit if using QLib vs RLib
+# setup memory counter/downcounter/upbit/downbit/unbit?
+# 00+-0_
+{stpbits}.>>+>->>.
+# increment unbit?
 {incunb}.[<+].
-# clear RLib unbit
+# clear unbit?  
 .[<++].
 # setup graph memory
+# A graph is a complex data type
 {stpgm}. .
 {stp}.{stpbits}{stpgm}. setup func def
 {main}.{{stp}}. functional call
