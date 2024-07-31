@@ -1,8 +1,6 @@
 # Thermo
 
-A new TM compiler designed by me to have only 2 bit numbers.
-
-4 numeric symbols are 0+-*
+A new TM compiler designed by me to have only 2 bit numbers. 4 numeric symbols are 0+-*
 
 0++ = * /
 
