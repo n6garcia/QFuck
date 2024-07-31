@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int run()
+int main(int argc, char *argv[])
 {
     /* declare a file pointer */
     FILE *infile;
