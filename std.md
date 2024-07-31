@@ -8,7 +8,7 @@
 {skp1bit}.>.
 {skpcmem}.[>3].
 {skpdcmem}.[>3]>.
-{slwskpstpmem}.* {skpcmem} {skpdcmem} {skp1bit}.
+{slwskptmbtsmem}.* {skpcmem} {skpdcmem} {skp1bit}.
 # Add to UpCounter | * takes you to 0 | / adds 0 after cursor
 {add0b4}.</>>.
 {add+b4}.</>+>.
