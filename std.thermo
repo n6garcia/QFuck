@@ -14,12 +14,16 @@
 {add+b4}.</>+>.
 {add-b4}.</>->.
 {add*b4}.</>++>.
+# First Counter?
+{uAdd1bit}.[>-2]/.? *bad*
 {uAdd}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
 # setup graph memory | A graph is a complex data type
 {stpgm}. .
-{stp}.{thermbits}{stpgm}. setup func def
+{stp}.{thermbits}.
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
-{main}.{stp} {uAdd}. functional call
+{main}.{stp}.
+
+
 
 
 
