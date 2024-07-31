@@ -19,7 +19,7 @@
 {stpgm}. .
 {stp}.{thermbits}{stpgm}. setup func def
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
-{main}.{stp}. functional call
+{main}.{stp} {uAdd}. functional call
 
 
 
