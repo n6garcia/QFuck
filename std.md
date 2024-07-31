@@ -1,14 +1,19 @@
-# setup memory: Counter mem start/DownCounter mem start/Upbit/Downbit/Unbit
-# 00+-0|000..
-{stpbits}.>>+>->>.
+# setup memory: Counter mem start/Upbit/DownCounter mem start/Downbit/Unbit
+# 0+ * 0- * 0 |000..
+{thermbits}.>+>++>>->-->.
 # load unbit
 {lunb}.[<++>].
 # unload unbit
 {ulunb}.[<+>].
+# For 0123 if slot is 0/0 1/+ 2/- or 3/* then break
+{skpdc}.[>3]>.
+# Add to UpCounter * takes you to 0 / adds 0 after cursor
+{add0b4}.</>>.
+{uAdd}.*[>3] {add0b4} {skpdc}>.
 # setup graph memory
 # A graph is a complex data type
 {stpgm}. .
-{stp}.{stpbits}{stpgm}. setup func def
+{stp}.{thermbits}{stpgm}. setup func def
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
 {main}.{stp}. functional call
 
