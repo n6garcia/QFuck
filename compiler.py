@@ -45,11 +45,11 @@ def genheader():
 
 
 def genbplate():
-    a = r"""
+    CODE = r"""
     return 0;
     """
 
-    return "\n".join(a)
+    return CODE
 
 
 srcdir = os.path.abspath(".")
