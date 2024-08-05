@@ -1,6 +1,6 @@
-# Setup Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
+# Therm Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
 # 0+__ *0-__ ** | 000..
-{thermbits}.>+>++>>->-->.
+{stpthmbts}.>+>++>>->-->.
 # load/unload unbit
 {lunb}.[<++>].
 {ulunb}.[<+>].
@@ -16,7 +16,7 @@
 {add*b4}.</>++>.
 {cAdd}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
 {dcAddSub}.* {skpcmem} {skpdcmem} {add-b4} {skp1bit}.
-# Setup Memory | Graph Memory {A graph is a complex data type} |000...
+# Therm Memory | Graph Memory {A graph is a complex data type} |000...
 {stpgm}.>++++[-<+++++++++++>]   # Set up initial graph data (3 nodes)
 >++++++++[-<++++++++>]  # Another graph data (link to node)
 >++++++++[-<++++++++>].  # More initial data (link to node)
@@ -39,7 +39,7 @@
         >-<             # Move to neighbor, disconnect neighbor
     ]
 ].
-{stp}.{thermbits}{stpgm}.
+{stp}.{stpthmbts}{stpgm}.
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
 {main}.{stp}{opdfvs}.
 
