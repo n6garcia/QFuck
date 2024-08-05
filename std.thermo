@@ -18,10 +18,35 @@
 {uAdd1bit}.[>-2]/.? *bad*
 {uAdd}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
 # setup graph memory | A graph is a complex data type
-{stpgm}. .
-{stp}.{thermbits}.
+{stpgm}.>++++[-<+++++++++++>]   # Set up initial graph data (3 nodes)
+>++++++++[-<++++++++>]  # Another graph data (link to node)
+>++++++++[-<++++++++>].  # More initial data (link to node)
+{opdfs}.<<<[                    # Start processing
+    >-                  # Process node 1 (if connected to any other node)
+    [                   # Loop if current node has connections
+        -               # Disconnect this node (as part of our processing)
+        >-<             # Move to neighbor, disconnect neighbor
+    ]
+    >                   # Move to the next node
+    -                   # Process node 2 similarly
+    [                   # Loop if node has connections
+        -               # Disconnect this node
+        >-<             # Move to neighbor, disconnect neighbor
+    ]
+    >                   # Move to node 3
+    -                   # Process node 3 similarly
+    [                   # Loop if node has connections
+        -               # Disconnect this node
+        >-<             # Move to neighbor, disconnect neighbor
+    ]
+].
+{stp}.{thermbits}{stpgm}.
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
-{main}.{stp}.
+{main}.{stp}{opdfs}.
+
+
+
+
 
 
 
