@@ -14,9 +14,8 @@
 {add+b4}.</>+>.
 {add-b4}.</>->.
 {add*b4}.</>++>.
-# First Counter?
-{uAdd1bit}.[>-2]/.? *bad*
-{uAdd}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
+{cAdd}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
+{dcAddSub}.* {skpcmem} {skpdcmem} {add-b4} {skp1bit}.
 # setup graph memory | A graph is a complex data type
 {stpgm}.>++++[-<+++++++++++>]   # Set up initial graph data (3 nodes)
 >++++++++[-<++++++++>]  # Another graph data (link to node)
@@ -42,7 +41,7 @@
 ].
 {stp}.{thermbits}{stpgm}.
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
-{main}.{stp}{opdfs}.
+{main}.{stp}{opdfvs}.
 
 
 
