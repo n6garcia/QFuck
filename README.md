@@ -9,7 +9,7 @@ Thermo is a language designed to be a superset of BrainFuck. Thermo is designed 
 - ~ means deallocate memory address in pointer address buffer
 - & means read in current cell into pointer address buffer
 - | means jump to pointer address' cell
-- * takes you to cell 0 
+- \* takes you to cell 0 
 - ** skips to the next cell with value * or 0 if not found
 - / adds a cell with value 0 after the current cell
 - \\{x} copies a 64 bit number x into the current cell
