@@ -31,7 +31,7 @@
 >@++++++++[-<++++++++>]  # Another graph data (link to node)
 >@++++++++[-<++++++++>]  # More initial data (link to node)
 >@<.
-{opdfvs}.<<<[                    # Start processing
+{opdfvs}.<<<[           # Start processing
     >-                  # Process node 1 (if connected to any other node)
     [                   # Loop if current node has connections
         -               # Disconnect this node (as part of our processing)
