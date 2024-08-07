@@ -16,6 +16,7 @@
 {cAdd1}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
 {cAddx}(10).* {skpcmem} ({add+b4}%-%) {skpdcmem} {skp1bit}. # 10 is the default number
 {dcAddSub}.* {skpcmem} {skpdcmem} {add-b4} {skp1bit}.
+{dcAddSubx}{10}.* {skpcmem} {skpdcmem} ({add-b4}%-%) {skp1bit}.
 # Therm Memory | Graph Memory {A graph is a complex data type} |000...
 {stpgm}.@>@++++[-<+++++++++++>]   # Set up initial graph data (3 nodes)
 >@++++++++[-<++++++++>]  # Another graph data (link to node)
