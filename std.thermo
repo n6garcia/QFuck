@@ -1,3 +1,11 @@
+# @ means allocate and read in pointer address at value for 64 bit number
+# ! means dump memory address into current cell
+# ~ means deallocate memory address in buffer
+# & means read in current cell into pointer address buffer
+# | means jump to pointer address' cell
+# * takes you to cell 0 
+# / adds a cell with value 0 after the current cell 
+
 # Therm Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
 # 0+__ *0-__ ** | 000..
 {stpthmbts}.>+>++>>->-->.
@@ -9,7 +17,7 @@
 {skpcmem}.[>3].
 {skpdcmem}.[>3]>.
 {slwgmjmp}.* {skpcmem} {skpdcmem} {skp1bit}.
-# Add to UpCounter | * takes you to 0 | / adds 0 after cursor
+# Add to UpCounter
 {add0b4}.</>>.
 {add+b4}.</>+>.
 {add-b4}.</>->.

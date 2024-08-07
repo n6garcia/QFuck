@@ -1,7 +1,3 @@
-# @ means allocate and read in pointer address at value for 64 bit number
-# ! means dump memory address into current cell
-# ~ means deallocate memory address in buffer
-# & means read in current cell into pointer address buffer
 # Initialization
 {init}.@>@++++++[<+++++++>-]<. # Setup initial grid/cell state (example)
 >
