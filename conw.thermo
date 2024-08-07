@@ -1,4 +1,4 @@
-# @ means allocate / read in pointer address
+# @ means allocate and/or read in pointer address
 # & means dump memory address
 # Initialization
 {init}.>++++++[<+++++++>-]<. # Setup initial grid/cell state (example)
