@@ -1,3 +1,5 @@
+# @ means allocate / read in pointer address
+# & means dump memory address
 # Initialization
 {init}.>++++++[<+++++++>-]<. # Setup initial grid/cell state (example)
 >++++++++[<+++++++++>-]<. # Setup connections or initial values
