@@ -10,7 +10,7 @@
 
 # Therm Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
 # 0+__ *0-__ ** | 000..
-{stpthmbts}.>+>++>>->-->.
+{stpthmbts}.>+>++>>->-->++>.
 # load/unload unbit
 {lunb}.[<++>].
 {ulunb}.[<+>].
@@ -27,9 +27,10 @@
 {cAdd}.* {skpcmem} {add+b4} {skpdcmem} {skp1bit}.
 {dcAddSub}.* {skpcmem} {skpdcmem} {add-b4} {skp1bit}.
 # Therm Memory | Graph Memory {A graph is a complex data type} |000...
-{stpgm}.>++++[-<+++++++++++>]   # Set up initial graph data (3 nodes)
->++++++++[-<++++++++>]  # Another graph data (link to node)
->++++++++[-<++++++++>].  # More initial data (link to node)
+{stpgm}.@>@++++[-<+++++++++++>]   # Set up initial graph data (3 nodes)
+>@++++++++[-<++++++++>]  # Another graph data (link to node)
+>@++++++++[-<++++++++>]  # More initial data (link to node)
+>@<.
 {opdfvs}.<<<[                    # Start processing
     >-                  # Process node 1 (if connected to any other node)
     [                   # Loop if current node has connections
@@ -49,9 +50,10 @@
         >-<             # Move to neighbor, disconnect neighbor
     ]
 ].
+{cleargm}.&~>&~>&~>&~>&~<<<.
 {stp}.{stpthmbts}{stpgm}.
 # GOAL: Never encapsulate a function call {stp{stp}} is illegal.
-{main}.{stp}{opdfvs}.
+{main}.{stp}{opdfvs}{cleargm}.
 
 
 
