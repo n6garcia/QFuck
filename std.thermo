@@ -4,7 +4,9 @@
 # & means read in current cell into pointer address buffer
 # | means jump to pointer address' cell
 # * takes you to cell 0 
-# / adds a cell with value 0 after the current cell 
+# / adds a cell with value 0 after the current cell
+# $ copies the number in the current cell to a copy value buffer
+# ^ copies the number in the copy value buffer into the current cell 
 
 # Therm Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
 # 0+__ *0-__ ** | 000..
