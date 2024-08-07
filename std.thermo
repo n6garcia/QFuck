@@ -1,5 +1,5 @@
-# @ means allocate 64 bit number and read in pointer address at value for 64 bit number
-# ! means dump memory address into current cell
+# @ means allocate 64 bit number and read in 64 bit pointer address at the current cell
+# ! means copy pointer address buffer into current cell and allocate a 64 bit number at the cell (also reads in cell pointer)
 # ~ means deallocate memory address in pointer address buffer
 # & means read in current cell into pointer address buffer
 # | means jump to pointer address' cell
