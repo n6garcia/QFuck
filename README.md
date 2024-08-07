@@ -12,7 +12,7 @@ Thermo is a language designed to be a superset of BrainFuck. Thermo is designed 
 - * takes you to cell 0 
 - ** skips to the next cell with value * or 0 if not found
 - / adds a cell with value 0 after the current cell
-- \{x} copies a 64 bit number x into the current cell
+- \\{x} copies a 64 bit number x into the current cell
 - $ copies the number in the current cell to a copy value buffer
 - ^ copies the number in the copy value buffer into the current cell
 - , prints the number in the current copy value buffer to the terminal in ASCII
