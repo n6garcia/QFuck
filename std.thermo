@@ -9,7 +9,8 @@
 # ^ copies the number in the copy value buffer into the current cell 
 # , prints the number in the current copy value buffer to the terminal in ASCII
 # ; prints the number in the current copy value buffer to the terminal
-
+# () are the same as [] expect () loops until the value in the function operand buffer = 0
+# %% encapsulates math operations done on the function operand buffer, +-$^,; are allowed in between %% 
 
 # Therm Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
 # 0+__ *0-__ ** | 000..
