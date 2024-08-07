@@ -14,6 +14,8 @@
 # () are the same as [] expect () loops until the value in the function operand buffer = 0
 # %% encapsulates math operations done on the function operand buffer, +-$^,; are allowed in between %% 
 
+# <>+-[] are the other supported bf operations
+
 # Therm Memory: Counter Mem Start/Upbit(flag)/DownCounter Mem Start/Downbit(flag)/Unbit
 # 0+__ *0-__ ** | 000..
 {stpthmbts}.>+>++>>->-->++>.
