@@ -1,0 +1,34 @@
+# Set up grid and initial configuration
+# Let's assume a 5x5 grid, so we need 25 memory cells
+
+# Initialize grid
+{initgrid}.
+++++++++[>+++++++<-]>.<  # Initialize first row
+++++++++[>+++++++<-]>.<  # Second row
+++++++++[>+++++++<-]>.<  # Third row
+++++++++[>+++++++<-]>.<  # Fourth row
+++++++++[>+++++++<-]>.<  # Fifth row
+
+# Function: Count neighbors
+{countneighbors}.
+[->+<]>[->+<]>[->+<]>[->+<]>[->+<]  # Count adjacent cells
+
+# Function: Apply Levy and Lowe's selection rule
+{applylevy}.
+[
+    ->>++++<<[->>++++<<]>  # Check if a cell should survive or be born
+    # Implement logic here based on neighbors count
+    >-  # Apply rule: if neighbors == 3, become alive
+]
+
+# Main loop
+{main}.
+{initgrid}  # Initialize grid
+{countneighbors}  # Count neighbors for each cell
+{applylevy}  # Apply Levy and Lowe's rule
+
+# Loop back to beginning
+{main}.
+
+# Example of running the program
+{main}.  # Run the main loop
