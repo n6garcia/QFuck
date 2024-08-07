@@ -1,5 +1,5 @@
 # Initialization
-{init}.@>@++++++[<+++++++>-]<. # Setup initial grid/cell state (example)
+{init}.>++++++[<+++++++>-]<. # Setup initial grid/cell state (example)
 >
 >++++++++[<+++++++++>-]<. # Setup connections or initial values
 

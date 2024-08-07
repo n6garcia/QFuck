@@ -4,10 +4,11 @@
 # & means read in current cell into pointer address buffer
 # | means jump to pointer address' cell
 # * takes you to cell 0 
+# ** skips to the next cell with value * or 0 if not found
 # / adds a cell with value 0 after the current cell
 # \{x} copies a 64 bit number x into the current cell
 # $ copies the number in the current cell to a copy value buffer
-# ^ copies the number in the copy value buffer into the current cell 
+# ^ copies the number in the copy value buffer into the current cell
 # , prints the number in the current copy value buffer to the terminal in ASCII
 # ; prints the number in the current copy value buffer to the terminal
 # () are the same as [] expect () loops until the value in the function operand buffer = 0
@@ -19,10 +20,9 @@
 # load/unload unbit
 {lunb}.[<++>].
 {ulunb}.[<+>].
-# 0123 mean if slot is 0/0 1/+ 2/- or 3/* then break loop
 {skp1bit}.>.
-{skpcmem}.[>3].
-{skpdcmem}.[>3]>.
+{skpcmem}.**.
+{skpdcmem}.**>.
 {slwgmjmp}.* {skpcmem} {skpdcmem} {skp1bit}.
 # Add to UpCounter
 {add0b4}.</>>.
